@@ -1,4 +1,4 @@
-#Object-oriented design patterns
+# Object-oriented design patterns
 
 **Class**
 * has Fields (what it knows)
@@ -7,6 +7,7 @@
 **Inheritance**
 * Abstract out features of classes to a superclass
 * Override or extend methods that don't work
+
 *Use when subclass needs most of the methods in a superclass*
 *Avoids duplicate code, subclasses automatically have superclass methods*
 
