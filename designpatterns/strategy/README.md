@@ -7,9 +7,9 @@ Define a family of algortihms, encapsulate each one and make them interchangeabl
 
 *For example:*
 *I want the class object to be able to choose from*
-_* Not Flying_
-_* Fly with Wings_
-_* Fly Super Fast_
+    * _Not Flying_
+    * _Fly with Wings_
+    * _Fly Super Fast_
 
 * **When using one of several behaviors dynamically**
 
