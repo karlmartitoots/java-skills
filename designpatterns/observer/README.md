@@ -4,6 +4,7 @@ The Observer pattern is a software design pattern in which an object has a list 
 ## When to use the Observer pattern
 
 * When you need many other objects to receive updates when another object changes
+
 *For example:*
 *The Subject sends many stocks to its Observers*
 *The Observers choose the ones they want and use them*
