@@ -1,0 +1,27 @@
+@startuml ex2
+package "Schoolsystem"{
+    School "1" -- "1..*" Student : < go to
+    Student "1..*" -- "1..6" Course : takes >
+    Professor "1" -- "1..*" Course : teaches >
+
+    class School{
+        -name : String
+    }
+
+    class Student{
+        -name : String
+        -id : int
+        -birthDate: Date
+    }
+
+    class Course{
+        -title : String
+    }
+
+    class Professor{
+        -name : String
+        -roomNr : int
+    }
+}
+
+@enduml

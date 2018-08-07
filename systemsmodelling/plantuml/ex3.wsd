@@ -1,0 +1,36 @@
+@startuml ex3
+
+package "cinemabookingsystem"{
+
+    CBS "1" -- "0..*" Customer : records >
+    CBS "1" -- "0..*" Booking : stores >
+    CBS "1" -- "1..*" Theatre : < uses a
+    Customer "1" -- "0..*" Booking : makes >
+    Booking "0..*" -- "1" Show : for a >
+    Theatre "0..*" -- "1" Show : is scheduled at >
+    Booking "0..*" -- "1..*" Seat : requests >
+    Seat "1..*" *-- "1" Theatre : < reserves 
+    
+
+    class Seat{
+        -row : int
+        -seatNr : int
+    }
+
+    class Theatre{
+        -name : String
+        -address : String
+    }
+
+    class Show{
+        -movie : String
+        -time : time
+        -date : Date
+    }
+
+    class Customer{
+        -phoneNr : int
+    }
+}
+
+@enduml
