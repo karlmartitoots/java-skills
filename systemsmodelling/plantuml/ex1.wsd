@@ -1,0 +1,28 @@
+@startuml ex1
+
+Department "1" -- "1" Manager : has a >
+
+Department "1" -- "1..*" Employee : has a set of >
+
+Company "1" -- "1..*" Department : consists of >
+
+Department "1" -- "1..*" Office : is located >
+
+class Department{
+    -name : String
+}
+
+class Employee{
+    -name : String
+    -title : String
+}
+
+class Company{
+    -name : String
+}
+
+class Office{
+    -address : String
+}
+
+@enduml
