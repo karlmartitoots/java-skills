@@ -1,0 +1,27 @@
+Customer
+    +bookSeats(show, number)
+    +cancelBooking(booking)
+    +getPhone()
+
+CBS
+    +getCustomer(show,seat)
+    +getAvailableSeats(show)
+    +bookShow(theatre)
+
+Theatre
+    +bookShow()
+    +getCustomer(show,seat)
+
+Booking
+    +isCancellable()
+
+Show
+    +bookSeats(number)
+    +cancelBooking(booking)
+    +getCustomer(seat)
+
+Seat
+    -reserved
+    +isReserved()
+    +reserve()
+    +cancel()

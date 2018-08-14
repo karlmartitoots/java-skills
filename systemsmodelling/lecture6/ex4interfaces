@@ -1,0 +1,27 @@
+PRS
+    +submitPaper(paper,conference)
+    +getAcceptedPapersAuthorsEmails()
+    +getRejectedPapersAuthorsEmails()
+    +sendReminders(reviewers)
+    +getReviewersEmails()
+
+Conference
+    +assignPaper(paper,committemember)
+    +assignStatus(paper)
+    +getPapers(status)
+
+Committemember
+    -email
+    +getEmail()
+    +accept(paper)
+    +reject(paper)
+
+Author
+    -email
+    +getEmail()
+
+Paper
+    +getStatus()
+    +setAccepted()
+    +setRejected()
+    +getAuthors()

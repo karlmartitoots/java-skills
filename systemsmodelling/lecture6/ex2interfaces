@@ -1,0 +1,18 @@
+Student
+    -enrolled
+    +getCourses()
+    +enroll()
+
+Course
+    +getProfessors()
+    +getStudents()
+    +registerStudent()
+
+Professor
+    -consultationTime
+    -office
+    +assignCourse()
+    +getConsultationTime()
+    +getName()
+    +getOffice()
+
